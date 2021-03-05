@@ -1,0 +1,16 @@
+<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>Stencil Component Starter</title> <link rel="modulepreload" href="/build/p-52a3b969.js"><link rel="modulepreload" href="/build/p-72da6db2.js"><link rel="modulepreload" href="/build/p-75b8bc7c.js"><script nomodule="" src="/build/sonnet.js" data-stencil></script> <script type="module" src="/build/p-52a3b969.js" data-stencil data-resources-url="/build/" data-stencil-namespace="sonnet"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script> <link rel="preload" as="style" href="/build/p-16b68533.css"> <link rel="preload" as="font" href="/asset/fonts/averta-regular-webfont.woff2" type="font/woff2" crossorigin="anonymous"> <link rel="preload" as="font" href="/asset/fonts/averta-extrabold-webfont.woff2" type="font/woff2" crossorigin="anonymous"> <link rel="preload" as="font" href="/asset/fonts/averta-regularitalic-webfont.woff2" type="font/woff2" crossorigin="anonymous"> <link rel="preload" as="font" href="/asset/fonts/icons/icomoon.woff" type="font/woff" crossorigin="anonymous"> <link rel="stylesheet" href="build/sonnet.css"> </head> <body> <demo-app></demo-app> <script data-build="2021-03-04T17:26:15">if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  window.addEventListener('load', function() {
+  navigator.serviceWorker.register('/sw.js')
+    .then(function(reg) {
+    reg.onupdatefound = function() {
+      var installingWorker = reg.installing;
+      installingWorker.onstatechange = function() {
+      if (installingWorker.state === 'installed') {
+        window.dispatchEvent(new Event('swUpdate'))
+      }
+      }
+    }
+    })
+    .catch(function(err) { console.error('service worker error', err) });
+  });
+}</script></body></html>

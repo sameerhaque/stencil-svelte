@@ -1,0 +1,1 @@
+import{r as s,h as t,H as a}from"./p-75b8bc7c.js";const i=class{constructor(t){s(this,t),this.imageSrc="",this.imgAlt=""}render(){return t(a,null,t("div",{class:"image-panel"},t("snt-image",{"data-src":this.imageSrc,"img-alt":this.imgAlt})))}};i.TAG_NAME="snt-image-column";export{i as snt_image_column}
